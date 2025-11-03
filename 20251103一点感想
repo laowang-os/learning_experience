@@ -14,6 +14,7 @@
                   第四就是用moltemplate来定制力场。
                   第五就是还是得学moltemplate提到的怎么用ambertool来施加GAFF力场。
                   第六就是仔细看看*****py定制GAFF力场的流程。
+还有个VMD topotool或许可以用。
 首要的就是先看看pdb中的序号，ligpargen生成的data文件的序号如何对应，画个分子图看看，把参数对应起来。另外就是如何用avogadro可视化原子序号，直观一点总归是好的。
 # Recommended method:
 #
