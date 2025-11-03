@@ -10,10 +10,11 @@
 一开始觉得不好用的，不能和gmso对接起来的ligpargen也发现还有些用处，只是还得探索怎么把pdb，ligpargen生成的各种data文件以及gmso所使用的xml文件结合起来，以便用gmso来施加力场。
 可能还有六个选择吧，第一就是上面提到的编制客制化的gmso的xml文件。
                   第二就是直接用LAMMPS脚本来定义力场参数，好像可以吧。。。
-                  第三就是还是得学moltemplate提到的怎么用ambertool来施加GAFF力场。
-                  第四就是客制化moltemplate力场，用这个把力场参数施加到结构上。
-                  第五就是用moltemplate来定制力场。
+                  第三就是客制化moltemplate力场，用这个把力场参数施加到结构上。
+                  第四就是用moltemplate来定制力场。
+                  第五就是还是得学moltemplate提到的怎么用ambertool来施加GAFF力场。
                   第六就是仔细看看*****py定制GAFF力场的流程。
+首要的就是先看看pdb中的序号，ligpargen生成的data文件的序号如何对应，画个分子图看看，把参数对应起来。
 # Recommended method:
 #
 # Use AmberTools to create a MOL2 file containing one of the molecules
