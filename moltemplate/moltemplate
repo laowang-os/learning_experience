@@ -1,0 +1,7 @@
+在主 .lt 文件中包含力场文件（import 顺序重要）
+
+通常在生成体系的主 .lt（比如 system.lt 或你要写的 top.lt）顶部加入： import "gaff2.lt" import "gaff24PMMA3.lt"
+
+或者只 import 自定义的 gaff24PMMA3.lt（如果它已经包含了完整 GAFF 参数）。
+
+重要：如果两个文件定义了同一个 type 的参数，后 import 的会覆盖先前的定义（根据 moltemplate 的处理；实际效果也取决于写法），因此顺序要按你希望的覆盖逻辑摆放。
